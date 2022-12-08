@@ -6,6 +6,8 @@
 //
 import ComposableArchitecture
 import Foundation
+import Run
+import Configurations
 
 //MARK - Tabs in the app
 public enum Tab {
@@ -22,15 +24,21 @@ public struct AppFeature: ReducerProtocol {
     public struct State: Equatable {
         
         public var selectedTab: Tab
+        public var runState: RunFeature.State
+        public var configState: ConfigurationsFeature.State
         
-        public init(tab: Tab = .train) {
+        public init(tab: Tab = .train, runState: RunFeature.State = .init(), configState: ConfigurationsFeature.State = .init()) {
             self.selectedTab = tab
+            self.runState = runState
+            self.configState = configState
         }
     }
     
     public enum Action: Equatable {
         case none
         case changeTab(Tab)
+        case run(RunFeature.Action)
+        case config(ConfigurationsFeature.Action)
     }
     
     //Dependencies go here
@@ -42,8 +50,20 @@ public struct AppFeature: ReducerProtocol {
             case .changeTab(let newTab):
                 state.selectedTab = newTab
                 return .none
+            case .run( _ ):
+                return .none
+            case .config(_):
+                return .none
+            
             }
         }
-        //Other Reducers being scoped into this App Reducer Goes here
+        
+        // MARK - Other Reducers go here
+        Scope(state: \.runState, action: /Action.run) {
+            RunFeature()
+        }
+        Scope(state: \.configState, action: /Action.config) {
+            ConfigurationsFeature()
+        }
     }
 }

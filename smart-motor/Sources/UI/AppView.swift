@@ -40,10 +40,12 @@ public struct AppView: View {
                 .tag(Tab.train)
                 
                     
-                VStack {
-                    Text("Run")
-                        .font(.title)
-                }
+                RunView(
+                    store: store.scope(
+                        state: \.runState,
+                        action: AppFeature.Action.run
+                    )
+                )
                 .tabItem({
                     Image(systemName: "figure.run")
                     Text("Run")
@@ -51,10 +53,12 @@ public struct AppView: View {
                 })
                 .tag(Tab.run)
                 
-                VStack {
-                    Text("Configurations")
-                        .font(.title)
-                }
+                ConfigurationsView(
+                    store: store.scope(
+                        state: \.configState,
+                        action: AppFeature.Action.config
+                    )
+                )
                 .tabItem({
                     Image(systemName: "gearshape")
                     Text("Configurations")
@@ -73,8 +77,12 @@ struct AppView_Previews: PreviewProvider {
     static var previews: some View {
         AppView(
             store: Store(
-                initialState: AppFeature.State(tab: .train),
+                initialState: AppFeature.State(
+                    tab: .train,
+                    runState: .init(),
+                    configState: .init()),
                 reducer: AppFeature()
+                
             )
         )
     }

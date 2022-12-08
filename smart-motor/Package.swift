@@ -15,9 +15,22 @@ let package = Package(
             targets: ["UI"]
         ),
         .library(
+            name: "Configurations",
+            targets: ["Configurations"]
+        ),
+        .library(
+            name: "Train",
+            targets: ["Train"]
+        ),
+        .library(
+            name: "Run",
+            targets: ["Run"]
+        ),
+        .library(
             name: "AppCore",
             targets: ["AppCore"]
         ),
+        .library(name: "MQTTCore", targets: ["MQTTCore"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -31,7 +44,30 @@ let package = Package(
             name: "UI",
             dependencies: [
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
-                "AppCore"
+                "AppCore",
+                "Run",
+                "Configurations"
+                
+            ]
+        ),
+        .target(
+            name: "Run",
+            dependencies: [
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
+                
+            ]
+        ),
+        .target(
+            name: "Configurations",
+            dependencies: [
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
+                
+            ]
+        ),
+        .target(
+            name: "Train",
+            dependencies: [
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
                 
             ]
         ),
@@ -40,9 +76,20 @@ let package = Package(
             dependencies: [
                 .product(
                     name: "ComposableArchitecture",
-                    package: "swift-composable-architecture")
+                    package: "swift-composable-architecture"),
+                "Run",
+                "Configurations"
             ]
         ),
+        .target(
+            name: "MQTTCore",
+            dependencies: [
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
+                
+            ]
+        ),
+        
+        
         .testTarget(
             name: "UITests",
             dependencies: ["UI"]),
