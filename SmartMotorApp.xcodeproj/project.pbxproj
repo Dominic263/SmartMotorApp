@@ -47,6 +47,7 @@
 		49063EED2941ED3600D6788A /* SmartMotorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMotorAppUITests.swift; sourceTree = "<group>"; };
 		49063EEF2941ED3600D6788A /* SmartMotorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMotorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		49063EFC2941EDA700D6788A /* smart-motor */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "smart-motor"; sourceTree = SOURCE_ROOT; };
+		49063F022941F87300D6788A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		49063EC62941ED3300D6788A = {
 			isa = PBXGroup;
 			children = (
+				49063F022941F87300D6788A /* SwiftUIView.swift */,
 				49063EFC2941EDA700D6788A /* smart-motor */,
 				49063ED12941ED3300D6788A /* SmartMotorApp */,
 				49063EE22941ED3600D6788A /* SmartMotorAppTests */,
