@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49063ED32941ED3300D6788A /* SmartMotorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49063ED22941ED3300D6788A /* SmartMotorAppApp.swift */; };
+		49063ED52941ED3300D6788A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49063ED42941ED3300D6788A /* ContentView.swift */; };
+		49063ED72941ED3500D6788A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49063ED62941ED3500D6788A /* Assets.xcassets */; };
+		49063EDA2941ED3500D6788A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49063ED92941ED3500D6788A /* Preview Assets.xcassets */; };
+		49063EE42941ED3600D6788A /* SmartMotorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49063EE32941ED3600D6788A /* SmartMotorAppTests.swift */; };
+		49063EEE2941ED3600D6788A /* SmartMotorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49063EED2941ED3600D6788A /* SmartMotorAppUITests.swift */; };
+		49063EF02941ED3600D6788A /* SmartMotorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49063EEF2941ED3600D6788A /* SmartMotorAppUITestsLaunchTests.swift */; };
+		49063EFF2941EE3C00D6788A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 49063EFE2941EE3C00D6788A /* ComposableArchitecture */; };
+		49063F012941EE3C00D6788A /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 49063F002941EE3C00D6788A /* Dependencies */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49063EE02941ED3600D6788A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49063EC72941ED3300D6788A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49063ECE2941ED3300D6788A;
+			remoteInfo = SmartMotorApp;
+		};
+		49063EEA2941ED3600D6788A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49063EC72941ED3300D6788A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49063ECE2941ED3300D6788A;
+			remoteInfo = SmartMotorApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49063ECF2941ED3300D6788A /* SmartMotorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMotorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49063ED22941ED3300D6788A /* SmartMotorAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMotorAppApp.swift; sourceTree = "<group>"; };
+		49063ED42941ED3300D6788A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		49063ED62941ED3500D6788A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49063ED92941ED3500D6788A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49063EDF2941ED3600D6788A /* SmartMotorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartMotorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49063EE32941ED3600D6788A /* SmartMotorAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMotorAppTests.swift; sourceTree = "<group>"; };
+		49063EE92941ED3600D6788A /* SmartMotorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartMotorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49063EED2941ED3600D6788A /* SmartMotorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMotorAppUITests.swift; sourceTree = "<group>"; };
+		49063EEF2941ED3600D6788A /* SmartMotorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMotorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		49063EFC2941EDA700D6788A /* smart-motor */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "smart-motor"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49063ECC2941ED3300D6788A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49063EFF2941EE3C00D6788A /* ComposableArchitecture in Frameworks */,
+				49063F012941EE3C00D6788A /* Dependencies in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49063EDC2941ED3600D6788A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49063EE62941ED3600D6788A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49063EC62941ED3300D6788A = {
+			isa = PBXGroup;
+			children = (
+				49063EFC2941EDA700D6788A /* smart-motor */,
+				49063ED12941ED3300D6788A /* SmartMotorApp */,
+				49063EE22941ED3600D6788A /* SmartMotorAppTests */,
+				49063EEC2941ED3600D6788A /* SmartMotorAppUITests */,
+				49063ED02941ED3300D6788A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49063ED02941ED3300D6788A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49063ECF2941ED3300D6788A /* SmartMotorApp.app */,
+				49063EDF2941ED3600D6788A /* SmartMotorAppTests.xctest */,
+				49063EE92941ED3600D6788A /* SmartMotorAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49063ED12941ED3300D6788A /* SmartMotorApp */ = {
+			isa = PBXGroup;
+			children = (
+				49063ED22941ED3300D6788A /* SmartMotorAppApp.swift */,
+				49063ED42941ED3300D6788A /* ContentView.swift */,
+				49063ED62941ED3500D6788A /* Assets.xcassets */,
+				49063ED82941ED3500D6788A /* Preview Content */,
+			);
+			path = SmartMotorApp;
+			sourceTree = "<group>";
+		};
+		49063ED82941ED3500D6788A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				49063ED92941ED3500D6788A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49063EE22941ED3600D6788A /* SmartMotorAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				49063EE32941ED3600D6788A /* SmartMotorAppTests.swift */,
+			);
+			path = SmartMotorAppTests;
+			sourceTree = "<group>";
+		};
+		49063EEC2941ED3600D6788A /* SmartMotorAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				49063EED2941ED3600D6788A /* SmartMotorAppUITests.swift */,
+				49063EEF2941ED3600D6788A /* SmartMotorAppUITestsLaunchTests.swift */,
+			);
+			path = SmartMotorAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49063ECE2941ED3300D6788A /* SmartMotorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49063EF32941ED3600D6788A /* Build configuration list for PBXNativeTarget "SmartMotorApp" */;
+			buildPhases = (
+				49063ECB2941ED3300D6788A /* Sources */,
+				49063ECC2941ED3300D6788A /* Frameworks */,
+				49063ECD2941ED3300D6788A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartMotorApp;
+			packageProductDependencies = (
+				49063EFE2941EE3C00D6788A /* ComposableArchitecture */,
+				49063F002941EE3C00D6788A /* Dependencies */,
+			);
+			productName = SmartMotorApp;
+			productReference = 49063ECF2941ED3300D6788A /* SmartMotorApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49063EDE2941ED3600D6788A /* SmartMotorAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49063EF62941ED3600D6788A /* Build configuration list for PBXNativeTarget "SmartMotorAppTests" */;
+			buildPhases = (
+				49063EDB2941ED3600D6788A /* Sources */,
+				49063EDC2941ED3600D6788A /* Frameworks */,
+				49063EDD2941ED3600D6788A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49063EE12941ED3600D6788A /* PBXTargetDependency */,
+			);
+			name = SmartMotorAppTests;
+			productName = SmartMotorAppTests;
+			productReference = 49063EDF2941ED3600D6788A /* SmartMotorAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49063EE82941ED3600D6788A /* SmartMotorAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49063EF92941ED3600D6788A /* Build configuration list for PBXNativeTarget "SmartMotorAppUITests" */;
+			buildPhases = (
+				49063EE52941ED3600D6788A /* Sources */,
+				49063EE62941ED3600D6788A /* Frameworks */,
+				49063EE72941ED3600D6788A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49063EEB2941ED3600D6788A /* PBXTargetDependency */,
+			);
+			name = SmartMotorAppUITests;
+			productName = SmartMotorAppUITests;
+			productReference = 49063EE92941ED3600D6788A /* SmartMotorAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49063EC72941ED3300D6788A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					49063ECE2941ED3300D6788A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					49063EDE2941ED3600D6788A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 49063ECE2941ED3300D6788A;
+					};
+					49063EE82941ED3600D6788A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 49063ECE2941ED3300D6788A;
+					};
+				};
+			};
+			buildConfigurationList = 49063ECA2941ED3300D6788A /* Build configuration list for PBXProject "SmartMotorApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49063EC62941ED3300D6788A;
+			packageReferences = (
+				49063EFD2941EE3C00D6788A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 49063ED02941ED3300D6788A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49063ECE2941ED3300D6788A /* SmartMotorApp */,
+				49063EDE2941ED3600D6788A /* SmartMotorAppTests */,
+				49063EE82941ED3600D6788A /* SmartMotorAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49063ECD2941ED3300D6788A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49063EDA2941ED3500D6788A /* Preview Assets.xcassets in Resources */,
+				49063ED72941ED3500D6788A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49063EDD2941ED3600D6788A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49063EE72941ED3600D6788A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49063ECB2941ED3300D6788A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49063ED52941ED3300D6788A /* ContentView.swift in Sources */,
+				49063ED32941ED3300D6788A /* SmartMotorAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49063EDB2941ED3600D6788A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49063EE42941ED3600D6788A /* SmartMotorAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49063EE52941ED3600D6788A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49063EF02941ED3600D6788A /* SmartMotorAppUITestsLaunchTests.swift in Sources */,
+				49063EEE2941ED3600D6788A /* SmartMotorAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49063EE12941ED3600D6788A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49063ECE2941ED3300D6788A /* SmartMotorApp */;
+			targetProxy = 49063EE02941ED3600D6788A /* PBXContainerItemProxy */;
+		};
+		49063EEB2941ED3600D6788A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49063ECE2941ED3300D6788A /* SmartMotorApp */;
+			targetProxy = 49063EEA2941ED3600D6788A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		49063EF12941ED3600D6788A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49063EF22941ED3600D6788A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49063EF42941ED3600D6788A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartMotorApp/Preview Content\"";
+				DEVELOPMENT_TEAM = DR869849C7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.final.SmartMotorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49063EF52941ED3600D6788A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartMotorApp/Preview Content\"";
+				DEVELOPMENT_TEAM = DR869849C7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.final.SmartMotorApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49063EF72941ED3600D6788A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DR869849C7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.final.SmartMotorAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartMotorApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartMotorApp";
+			};
+			name = Debug;
+		};
+		49063EF82941ED3600D6788A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DR869849C7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.final.SmartMotorAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartMotorApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartMotorApp";
+			};
+			name = Release;
+		};
+		49063EFA2941ED3600D6788A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DR869849C7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.final.SmartMotorAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartMotorApp;
+			};
+			name = Debug;
+		};
+		49063EFB2941ED3600D6788A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DR869849C7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.final.SmartMotorAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartMotorApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49063ECA2941ED3300D6788A /* Build configuration list for PBXProject "SmartMotorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49063EF12941ED3600D6788A /* Debug */,
+				49063EF22941ED3600D6788A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49063EF32941ED3600D6788A /* Build configuration list for PBXNativeTarget "SmartMotorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49063EF42941ED3600D6788A /* Debug */,
+				49063EF52941ED3600D6788A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49063EF62941ED3600D6788A /* Build configuration list for PBXNativeTarget "SmartMotorAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49063EF72941ED3600D6788A /* Debug */,
+				49063EF82941ED3600D6788A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49063EF92941ED3600D6788A /* Build configuration list for PBXNativeTarget "SmartMotorAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49063EFA2941ED3600D6788A /* Debug */,
+				49063EFB2941ED3600D6788A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		49063EFD2941EE3C00D6788A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.47.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		49063EFE2941EE3C00D6788A /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49063EFD2941EE3C00D6788A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		49063F002941EE3C00D6788A /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49063EFD2941EE3C00D6788A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = Dependencies;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 49063EC72941ED3300D6788A /* Project object */;
+}
