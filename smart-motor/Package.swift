@@ -12,7 +12,12 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "UI",
-            targets: ["UI"]),
+            targets: ["UI"]
+        ),
+        .library(
+            name: "AppCore",
+            targets: ["AppCore"]
+        ),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -25,7 +30,17 @@ let package = Package(
         .target(
             name: "UI",
             dependencies: [
-                .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
+                "AppCore"
+                
+            ]
+        ),
+        .target(
+            name: "AppCore",
+            dependencies: [
+                .product(
+                    name: "ComposableArchitecture",
+                    package: "swift-composable-architecture")
             ]
         ),
         .testTarget(
