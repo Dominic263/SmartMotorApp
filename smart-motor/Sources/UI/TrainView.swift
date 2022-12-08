@@ -1,18 +1,19 @@
 //
-//  RunPreviewView.swift
+//  TrainView.swift
 //
 //
 //  Created by DOMINIC NDONDO on 12/8/22.
 //
 import SwiftUI
 import ComposableArchitecture
-import Configurations
+import Train
 
-public struct ConfigurationsView: View {
-    public var store: StoreOf<ConfigurationsFeature>
+public struct TrainView: View {
+    
+    public var store: StoreOf<TrainFeature>
     
     
-    public init(store: StoreOf<ConfigurationsFeature>) {
+    public init(store: StoreOf<TrainFeature>) {
         self.store = store
     }
     
@@ -23,12 +24,13 @@ public struct ConfigurationsView: View {
                 HStack {
                     Spacer()
                     // MARK - This View will contain charts and other interesting views showing how the smart motor behaves in run mode
-                    Text("Config Feature.")
+                    Text("Train Feature.")
                         .font(.title)
-                    
+                   
                     Spacer()
                 }
                 Spacer()
+                
             }
           
         }
@@ -36,14 +38,13 @@ public struct ConfigurationsView: View {
     }
 }
 
-struct ConfigurationsView_Previews: PreviewProvider {
+struct TrainView_Previews: PreviewProvider {
     static var previews: some View {
-        ConfigurationsView(
+        TrainView(
             store: Store(
-                initialState: ConfigurationsFeature.State(),
-                reducer: ConfigurationsFeature()
+                initialState: TrainFeature.State(),
+                reducer: TrainFeature()
             )
         )
     }
 }
-

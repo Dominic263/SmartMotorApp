@@ -4,7 +4,6 @@
 //
 //  Created by DOMINIC NDONDO on 12/8/22.
 //
-
 import SwiftUI
 import AppCore
 import ComposableArchitecture
@@ -27,17 +26,18 @@ public struct AppView: View {
                 )
             ) {
                 //MARK - VStacks to be replaced by Build Features
-                VStack {
-                    
-                   Text("Train")
-                     .font(.title)
-                    
-                }
+                TrainView(
+                    store: store.scope(
+                        state: \.trainState,
+                        action: AppFeature.Action.train
+                    )
+                )
                 .tabItem({
                     Image(systemName: "figure.strengthtraining.traditional")
                     Text("Train")
                 })
                 .tag(Tab.train)
+                .background(.mint.opacity(0.2))
                 
                     
                 RunView(
@@ -52,6 +52,7 @@ public struct AppView: View {
                         .font(.headline)
                 })
                 .tag(Tab.run)
+                .background(.mint.opacity(0.2))
                 
                 ConfigurationsView(
                     store: store.scope(
@@ -65,6 +66,7 @@ public struct AppView: View {
                         .font(.headline)
                 })
                 .tag(Tab.run)
+                .background(.mint.opacity(0.2))
                 
             }.background(.mint)
            
@@ -77,12 +79,8 @@ struct AppView_Previews: PreviewProvider {
     static var previews: some View {
         AppView(
             store: Store(
-                initialState: AppFeature.State(
-                    tab: .train,
-                    runState: .init(),
-                    configState: .init()),
+                initialState: AppFeature.State(),
                 reducer: AppFeature()
-                
             )
         )
     }

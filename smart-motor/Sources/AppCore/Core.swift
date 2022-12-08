@@ -8,6 +8,7 @@ import ComposableArchitecture
 import Foundation
 import Run
 import Configurations
+import Train
 
 //MARK - Tabs in the app
 public enum Tab {
@@ -26,11 +27,13 @@ public struct AppFeature: ReducerProtocol {
         public var selectedTab: Tab
         public var runState: RunFeature.State
         public var configState: ConfigurationsFeature.State
+        public var trainState: TrainFeature.State
         
-        public init(tab: Tab = .train, runState: RunFeature.State = .init(), configState: ConfigurationsFeature.State = .init()) {
+        public init(tab: Tab = .train, runState: RunFeature.State = .init(), configState: ConfigurationsFeature.State = .init(), trainState: TrainFeature.State = .init()) {
             self.selectedTab = tab
             self.runState = runState
             self.configState = configState
+            self.trainState = trainState
         }
     }
     
@@ -39,6 +42,7 @@ public struct AppFeature: ReducerProtocol {
         case changeTab(Tab)
         case run(RunFeature.Action)
         case config(ConfigurationsFeature.Action)
+        case train(TrainFeature.Action)
     }
     
     //Dependencies go here
@@ -54,7 +58,9 @@ public struct AppFeature: ReducerProtocol {
                 return .none
             case .config(_):
                 return .none
-            
+             
+            case .train(_):
+                return .none
             }
         }
         
@@ -64,6 +70,9 @@ public struct AppFeature: ReducerProtocol {
         }
         Scope(state: \.configState, action: /Action.config) {
             ConfigurationsFeature()
+        }
+        Scope(state: \.trainState, action: /Action.train) {
+            TrainFeature()
         }
     }
 }

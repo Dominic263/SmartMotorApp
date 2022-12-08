@@ -46,7 +46,8 @@ let package = Package(
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
                 "AppCore",
                 "Run",
-                "Configurations"
+                "Configurations",
+                "Train"
                 
             ]
         ),
@@ -78,7 +79,8 @@ let package = Package(
                     name: "ComposableArchitecture",
                     package: "swift-composable-architecture"),
                 "Run",
-                "Configurations"
+                "Configurations",
+                "Train"
             ]
         ),
         .target(
